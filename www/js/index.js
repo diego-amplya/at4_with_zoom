@@ -287,6 +287,7 @@ $(document).ready(function ()
     });
 
     $('.cuerpo-entrada').on('click', 'img', function(e){
+        consol.log('click en imagen');
         alert('clic');
         PhotoViewer.show($(this).attr('src'), '', {share:false});
     });
